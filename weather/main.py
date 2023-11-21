@@ -37,7 +37,7 @@ def weather_code_decipher(code):
 
 def list_searcher(search_query):
     city_dictionary_list = []
-    with open("D:\MISCELLANEOUS\Coding Projects\WeatherBot\weather\worldcities.csv", "r", encoding="UTF-8") as f:
+    with open("worldcities.csv", "r", encoding="UTF-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             city_dictionary_list.append(row)

@@ -1,11 +1,13 @@
+import os
+import time
+from datetime import datetime
+
 import discord
 from discord import app_commands
 from discord.ext import commands
-from weather import main
-from datetime import datetime
-import time
-import os
 from dotenv import load_dotenv
+
+from weather import main
 
 load_dotenv()
 token = os.getenv("bot_token")
