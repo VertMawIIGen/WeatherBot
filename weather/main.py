@@ -1,6 +1,6 @@
 import requests
 import csv
-
+from pathlib import Path
 
 def weather_code_decipher(code):
     weather_code = {0: "Clear sky",
@@ -34,10 +34,11 @@ def weather_code_decipher(code):
     actual_weather = weather_code.get(code)
     return actual_weather
 
+filepath = Path(__file__).parent / "worldcities.csv"
 
 def list_searcher(search_query):
     city_dictionary_list = []
-    with open("worldcities.csv", "r", encoding="UTF-8") as f:
+    with open(filepath, "r", encoding="UTF-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             city_dictionary_list.append(row)
