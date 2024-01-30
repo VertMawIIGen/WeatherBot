@@ -3,5 +3,5 @@ A WIP Discord Bot that will give the weather of a city.
 
 # How to Use:
 - Download relevant packages (namely: discord and dotenv).
-- Add a .env file which contains the app secret.
+- Add a .env file which contains the bot token.
 - Run the file.
